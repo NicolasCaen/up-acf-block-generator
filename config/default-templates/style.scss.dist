@@ -1,0 +1,17 @@
+@import "mixins";
+
+.wp-block-{{block_name}} {
+    // Variables
+    --block-padding: 20px;
+    --block-margin: 20px;
+    
+    // Styles de base
+    padding: var(--block-padding);
+    margin: var(--block-margin);
+    
+    // Responsive
+    @include m(768) {
+        --block-padding: 15px;
+        --block-margin: 15px;
+    }
+}

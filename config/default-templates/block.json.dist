@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "name": "{{block_name}}",
+    "title": "{{block_title}}",
+    "description": "{{block_description}}",
+    "category": "pixelea",
+    "icon": "{{block_icon}}",
+    "apiVersion": 3,
+    "keywords": {{block_keywords}},
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "view.php"
+    },
+    "supports": {{block_supports}},
+    "style": ["file:./style.css"],
+    "script": ["file:./assets/js/function.js"]
+} 

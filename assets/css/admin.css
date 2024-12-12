@@ -1,0 +1,49 @@
+.icon-selector {
+    position: relative;
+}
+
+.dashicons-picker {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-top: 5px;
+    width: 360px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dashicons-picker-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+}
+
+.dashicons-picker-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dashicons-picker-item:hover {
+    background: #f0f0f0;
+}
+
+.dashicons-picker-item.selected {
+    background: #2271b1;
+    color: #fff;
+}
+
+.dashicons-picker-item .dashicons {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+} 
