@@ -1,0 +1,37 @@
+<?php
+/**
+ * Ce fichier permet d'ajouter des hooks et des fonctions spécifiques au bloc.
+ * Si ce fichier n'est pas utilisé, vous pouvez le supprimer.
+ * 
+ * Exemples d'utilisation courante :
+ * - Filtres pour modifier les valeurs des champs
+ * - Actions pour ajouter des fonctionnalités personnalisées
+ * - Fonctions helper utilisées dans le template du bloc
+ */
+
+/**
+ * Exemple : Pré-remplir dynamiquement un champ select ACF
+ * À adapter selon vos besoins ou à supprimer si non utilisé
+ */
+add_filter('acf/load_field/name=sample_select', function($field) {
+    // Réinitialiser les choix
+    $field['choices'] = array();
+    
+    // Exemple de données dynamiques
+    $choices = array(
+        'option1' => 'Option 1',
+        'option2' => 'Option 2',
+        'option3' => 'Option 3'
+    );
+    
+    // Vous pouvez remplacer $choices par des données provenant de :
+    // - Une requête WP_Query
+    // - Une API externe
+    // - Une table personnalisée
+    // - etc.
+    
+    // Ajouter les choix au champ
+    $field['choices'] = $choices;
+    
+    return $field;
+});

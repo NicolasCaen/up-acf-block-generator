@@ -59,6 +59,10 @@ class BlockGenerator {
                 'path' => $block_path . '/assets/scss', 
                 'vars' => ['block_name' => $config['name']]
             ],
+            'functions.php' => [
+                'path' => $block_path,
+                'vars' => []
+            ],
         ];
 
         foreach ($templates as $template_name => $data) {
